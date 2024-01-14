@@ -14,11 +14,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: borales/actions-yarn@v4
       - uses: actions/setup-node@v3
         with:
-          node-version: "20.x"
-      - run: yarn install
-      - run: yarn build
-      - run: yarn lint
-      - run: yarn run --if-present test
+          node-version-file: .nvmrc
+          cache: yarn
+      - name: Run install
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install # will run `yarn install` command
+      - name: Build production bundle
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: prod
+      - name: Run lint
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: lint
+      - name: Run test
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: run --if-present test
