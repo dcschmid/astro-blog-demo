@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.1.0",
+    "@fontsource/cabin": "^5.0.16",
     "astro": "^4.1.2",
     "tailwindcss": "^3.4.1"
   },
