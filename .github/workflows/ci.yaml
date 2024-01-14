@@ -14,12 +14,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v2
+      - uses: borales/actions-yarn@v4
       - uses: actions/setup-node@v3
         with:
           node-version-file: .nvmrc
-          cache: pnpm
+          cache: yarn
       - run: yarn install
-      - run: pnpm run build
-      - run: pnpm run lint
-      - run: pnpm run --if-present test
+      - run: yarn build
+      - run: yarn lint
+      - run: yarn run --if-present test
