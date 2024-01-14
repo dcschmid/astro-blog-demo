@@ -5,6 +5,7 @@
     "prettier-plugin-css-order",
     "prettier-plugin-astro-organize-imports"
   ],
+  "cssDeclarationSorterOrder": "concentric-css",
   "overrides": [
     {
       "files": "*.astro",
