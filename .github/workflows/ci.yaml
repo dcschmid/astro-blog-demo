@@ -25,7 +25,7 @@ jobs:
       - name: Build production bundle
         uses: borales/actions-yarn@v4
         with:
-          cmd: prod
+          cmd: build
       - name: Run lint
         uses: borales/actions-yarn@v4
         with:
