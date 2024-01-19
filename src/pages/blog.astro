@@ -1,0 +1,20 @@
+---
+import { getCollection } from "astro:content";
+
+import Layout from "../layouts/Layout.astro";
+
+const allPosts = await getCollection("posts");
+
+console.log(allPosts);
+---
+
+<Layout title="Blog - Astro Course">
+  <main class="px24 mx-auto w-full max-w-7xl max-sm:px-5">
+    <h1 class="mb-5 text-6xl font-bold text-teal-900">Rythm Nation Blog</h1>
+    <p class="mb-24 text-2xl text-zinc-900 max-sm:mb-14">
+      Join the comumunity and learn from Music Producers and Enthusiasts
+    </p>
+
+    {allPosts.map((post) => <h2>{post.data.title}</h2>)}
+  </main>
+</Layout>
