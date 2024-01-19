@@ -1,11 +1,10 @@
 ---
 import { getCollection } from "astro:content";
 
+import PostList from "../components/PostList.astro";
 import Layout from "../layouts/Layout.astro";
 
 const allPosts = await getCollection("posts");
-
-console.log(allPosts);
 ---
 
 <Layout title="Blog - Astro Course">
@@ -15,6 +14,6 @@ console.log(allPosts);
       Join the comumunity and learn from Music Producers and Enthusiasts
     </p>
 
-    {allPosts.map((post) => <h2>{post.data.title}</h2>)}
+    <PostList posts={allPosts} />
   </main>
 </Layout>
