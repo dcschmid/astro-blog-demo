@@ -1,3 +1,5 @@
+/* eslint-disable global-require */
+/* eslint-disable @typescript-eslint/no-var-requires */
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} */
@@ -13,5 +15,5 @@ export default {
       }
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
