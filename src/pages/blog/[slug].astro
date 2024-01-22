@@ -4,6 +4,7 @@ import { getCollection } from "astro:content";
 
 import H1 from "../../components/H1.astro";
 import Main from "../../components/Main.astro";
+import Share from "../../components/Share.astro";
 import TableOfContent from "../../components/TableOfContent.astro";
 import Layout from "../../layouts/Layout.astro";
 
@@ -28,7 +29,6 @@ interface Props {
 
 const { post } = Astro.props;
 const { Content, headings } = await post.render();
-console.log(headings);
 ---
 
 <Layout title={post.data.title}>
@@ -45,12 +45,16 @@ console.log(headings);
       class="mb-28 aspect-thumbnail rounded-2xl object-cover shadow-xl"
     />
 
-    <div class="relative flex gap-x-12">
+    <div class="mb-10">
+      <TableOfContent headings={headings} />
+    </div>
+
+    <div class="relative">
+      <Share post={post} />
+
       <div class="prose prose-2xl relative overflow-visible">
         <Content />
       </div>
-
-      <TableOfContent headings={headings} />
     </div>
   </Main>
 </Layout>
