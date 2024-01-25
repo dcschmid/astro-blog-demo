@@ -5,6 +5,7 @@ import { getCollection } from "astro:content";
 
 import H1 from "../../components/H1.astro";
 import Main from "../../components/Main.astro";
+import Pagination from "../../components/Pagination.astro";
 import PostList from "../../components/PostList.astro";
 import Layout from "../../layouts/Layout.astro";
 
@@ -28,6 +29,14 @@ const posts = page.data as CollectionEntry<"posts">[];
       Join the comumunity and learn from Music Producers and Enthusiasts
     </p>
 
+    <div class="mb-12">
+      <Pagination prevUrl={page.url.prev} nextUrl={page.url.next} />
+    </div>
+
     <PostList posts={posts} />
+
+    <div class="mb-36">
+      <Pagination prevUrl={page.url.prev} nextUrl={page.url.next} />
+    </div>
   </Main>
 </Layout>
