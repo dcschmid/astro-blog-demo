@@ -22,7 +22,10 @@ const { page } = Astro.props;
 const posts = page.data as CollectionEntry<"posts">[];
 ---
 
-<Layout title="Blog - Astro Course">
+<Layout
+  title="Blog - Rhythm Nation"
+  description="Read and learn from Music Producers and Enthusiasts"
+>
   <Main>
     <H1 text="Rythm Nation Blog" />
     <p class="mb-24 text-2xl text-zinc-900 max-sm:mb-14">
