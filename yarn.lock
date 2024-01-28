@@ -928,10 +928,10 @@
   dependencies:
     "@types/unist" "^2"
 
-"@types/node@20.11.6":
-  version "20.11.6"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.11.6.tgz#6adf4241460e28be53836529c033a41985f85b6e"
-  integrity sha512-+EOokTnksGVgip2PbYbr3xnR7kZigh4LbybAfBAw5BpnQ+FqBYUsvCEjYd70IXKlbohQ64mzEYmMtlWUY8q//Q==
+"@types/node@20.11.9":
+  version "20.11.9"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.11.9.tgz#959d436f20ce2ee3df897c3eaa0617c98fa70efb"
+  integrity sha512-CQXNuMoS/VcoAMISe5pm4JnEd1Br5jildbQEToEMQvutmv+EaQr90ry9raiudgpyDuqFiV9e4rnjSfLNq12M5w==
   dependencies:
     undici-types "~5.26.4"
 
@@ -1361,10 +1361,10 @@ astro-eslint-parser@^0.16.0:
     espree "^9.0.0"
     semver "^7.3.8"
 
-astro@^4.2.4:
-  version "4.2.4"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-4.2.4.tgz#f8878fd91f888425d6d58f8bd86e71b619b04ff1"
-  integrity sha512-z1f52lXkHf71M5HSLKrd5G1PH5/Zfq4kMp0iUT7Na5VHcPDma/NYFPFPewDxqV6UPmyxupj3xuooFaN3j8zaow==
+astro@^4.2.6:
+  version "4.2.6"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-4.2.6.tgz#14d05b0635daa71a6a1652a9022be0b4207ad62d"
+  integrity sha512-k5i8pEI2r45JTkoE0I4JyhOH/dZFpjUA4AONbRd9Gr1LtnGOhKHDftiYOrRLUGx91q7BzoW3DOk+h4yZM4yC3g==
   dependencies:
     "@astrojs/compiler" "^2.5.0"
     "@astrojs/internal-helpers" "0.2.1"
@@ -1386,6 +1386,7 @@ astro@^4.2.4:
     clsx "^2.0.0"
     common-ancestor-path "^1.0.1"
     cookie "^0.6.0"
+    cssesc "^3.0.0"
     debug "^4.3.4"
     deterministic-object-hash "^2.0.1"
     devalue "^4.3.2"
@@ -2674,10 +2675,10 @@ eslint-plugin-simple-import-sort@10.0.0:
   resolved "https://registry.yarnpkg.com/eslint-plugin-simple-import-sort/-/eslint-plugin-simple-import-sort-10.0.0.tgz#cc4ceaa81ba73252427062705b64321946f61351"
   integrity sha512-AeTvO9UCMSNzIHRkg8S6c3RPy5YEwKWSQPx3DYghLedo2ZQxowPFLGDN1AZ2evfg6r6mjBSZSLxLFsWSu3acsw==
 
-eslint-plugin-tailwindcss@3.14.0:
-  version "3.14.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-tailwindcss/-/eslint-plugin-tailwindcss-3.14.0.tgz#634edcbd5a3989a68bca5b41b9627172b86489d2"
-  integrity sha512-SGy4JmZoP5m1bXCbcsPfQg1/axOdriJf9L22HghNMyDTM5mybg2XEkaMwgax4aR13zZJRRB1nWmkuYUn+SV6/Q==
+eslint-plugin-tailwindcss@3.14.1:
+  version "3.14.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-tailwindcss/-/eslint-plugin-tailwindcss-3.14.1.tgz#9e243dd3c67b5e767460516dcc367da0676ddacc"
+  integrity sha512-orNkVzJ1fdCkj5d8AHE3tAbixNpMJRoKoHPnxZbZ6iBHTsNvOEmeBz62C3THPhFnXCXaD55SRbNjqGzMEXRoZA==
   dependencies:
     fast-glob "^3.2.5"
     postcss "^8.4.4"
@@ -3486,10 +3487,10 @@ human-signals@^5.0.0:
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-5.0.0.tgz#42665a284f9ae0dade3ba41ebc37eb4b852f3a28"
   integrity sha512-AXcZb6vzzrFAUE61HnN4mpLqd/cSIwNQjtNWR0euPm6y0iqx3G4gOXaIDdtdDwZmhwe82LA6+zinmW4UBWVePQ==
 
-husky@9.0.5:
-  version "9.0.5"
-  resolved "https://registry.yarnpkg.com/husky/-/husky-9.0.5.tgz#b01f5bcd5ca2230c5b29b0c891a9699bebefc4ab"
-  integrity sha512-/EX48XLor4FczjgdJjwK4qMETrJxJqF4rkgo+NUeK8b2F4TV6s5QxAuG2JZfxm4b9WnrgBGS7bA/JK+H5CKg+A==
+husky@9.0.6:
+  version "9.0.6"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-9.0.6.tgz#cee0245d60480b12279cf492ec6cfc1aeb7fa759"
+  integrity sha512-EEuw/rfTiMjOfuL7pGO/i9otg1u36TXxqjIA6D9qxVjd/UXoDOsLor/BSFf5hTK50shwzCU3aVVwdXDp/lp7RA==
 
 iconv-lite@^0.4.4:
   version "0.4.24"
@@ -5576,10 +5577,10 @@ prepend-http@^2.0.0:
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-2.0.0.tgz#e92434bfa5ea8c19f41cdfd401d741a3c819d897"
   integrity sha512-ravE6m9Atw9Z/jjttRUZ+clIXogdghyZAuWJ3qEzjT+jI/dL1ifAqhZeC5VHzQp1MSt1+jxKkFNemj/iO7tVUA==
 
-prettier-plugin-astro-organize-imports@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-astro-organize-imports/-/prettier-plugin-astro-organize-imports-0.4.0.tgz#897dfb0b22c1e2cccd082123e288b9142aa6710b"
-  integrity sha512-H8ekgzKc0OQZ9aRoyQV3taiOUc6PKfqTDbSGrLdXFdgInaoufdkn4+rAiKk0UjaX76fmdIj1LlqqZYXmuy9l4w==
+prettier-plugin-astro-organize-imports@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-astro-organize-imports/-/prettier-plugin-astro-organize-imports-0.4.1.tgz#e424829365ed53ca1bbb5866b5d54e13a0da7a9f"
+  integrity sha512-+FNWVIg4of3sOSjTuqfYIors40MZEQfBJmlqbXKAQaR5qPgPghr/qWFE6uHJLaynkzGQwDVR6DYSI+Ocu4R9Qw==
   dependencies:
     "@astrojs/compiler" "^2.5.1"
     typescript "^5.3.3"
